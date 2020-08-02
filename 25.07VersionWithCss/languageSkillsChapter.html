@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!-- CSS -->
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet"
+          href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Scripts -->
+    <script src="scripts/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="scripts/JavaScript.js"></script>
+
+</head>
+<body>
+    <div data-role="page" id="languageSkillsChapterPage1" class="languageSkillsChapterScreens">
+
+   
+        <h1>פרק כישורים שפתיים</h1>
+        <div class="TestInstructionsLabel">
+            <img id="languageSkillsCharacter" class="character" src="images/character.png" />
+            <label id="languageSkillsInstruction" class="TestInstructionsLabel">
+                לחצו רק על המילים המתחילות באות
+                <span>
+                    ט
+                </span>
+            </label>
+        </div>
+        <input id="letterRndStartBTN" type="button" data-role="none" value="התחלה" onclick="wordsStart()" />
+        <div class="center" id="LetterRecognitionDiv" style=" width:500px; height:800px;">
+
+        </div>
+    </div>
+
+    <div data-role="page" id="languageSkillsChapterPage2" class="languageSkillsChapterScreens">
+        <h1>פרק כישורים שפתיים</h1>
+        <div class="TestInstructionsLabel">
+
+            בתרגיל הבא, יופיעו לפניך 10 מילים.
+            עליך לחבר בין המילים ליצירת זוגות מילים המשתייכות לאותה קטגוריה.
+            <br />
+
+            לדוגמה:
+            <br />
+            חלון-דלת
+            <br />
+            <a id="languageSkillsPearsBTN" href="#languageSkillsChapterPage3" data-transition="pop" class="ui-btn ui-btn-a ui-btn-inline ">הבנתי</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="languageSkillsChapterPage3" class="languageSkillsChapterScreens">
+        <h1>פרק כישורים שפתיים</h1>
+        <div class="TestInstructionsLabel">
+
+            עליך להתאים כל מילה בצד ימין למילה המתאימה לה ביותר בצד שמאל
+
+
+        </div>
+        <div class="center" id="PearMatchingDiv" style=" width:500px; height:800px;">
+            <span id="1bodyWord" class="pears" style=" right:170px; top:200px; position:fixed" onclick="PairMatchingPage(this)">יד</span>
+            <span id="1artWord" class="pears" style=" right:170px; top:350px; position:fixed" onclick="PairMatchingPage(this)">ציור</span>
+            <span id="1foodWord" class="pears" style=" right:170px; top:500px; position:fixed" onclick="PairMatchingPage(this)">תפוז</span>
+            <span id="1cutleryWord" class="pears" style=" right:170px; top:650px; position:fixed" onclick="PairMatchingPage(this)">כף</span>
+            <span id="1VehicleWord" class="pears" style=" right:170px; top:800px; position:fixed" onclick="PairMatchingPage(this)">סירה</span>
+            <span id="2cutleryWord" class="pears" style=" right:450px; top:200px; position:fixed" onclick="PairMatchingPage(this)">מזלג</span>
+            <span id="2VehicleWord" class="pears" style=" right:450px; top:350px; position:fixed" onclick="PairMatchingPage(this)">אופניים</span>
+            <span id="2bodyWord" class="pears" style=" right:450px; top:500px; position:fixed" onclick="PairMatchingPage(this)">רגל</span>
+            <span id="2artWord" class="pears" style=" right:450px; top:650px; position:fixed" onclick="PairMatchingPage(this)">פסל</span>
+            <span id="2foodWord" class="pears" style=" right:450px; top:800px; position:fixed" onclick="PairMatchingPage(this)">אורז</span>
+        </div>
+
+    </div>
+    
+
+    <div data-role="page" id="languageSkillsChapterPage4" class="languageSkillsChapterScreens">
+        <h1>פרק כישורים שפתיים</h1>
+        <div class="TestInstructionsLabel">
+
+            גרור את המילים לקטגוריה המתאימה
+
+        </div>
+        <div class="center" id="CategoryDiv" style=" width:700px; height:800px;">
+            <div id="outerContainerCategory">
+                <div id="Categorycontainer" style=" width:700px; height:800px;">
+
+
+
+                </div>
+            </div>
+        </div>
+        <div id="categoriesForWords">
+            <div id="workToolsCategory" class="categoryDiv">
+                <img src="images/BasketCategory.png" width="150" height="150" />
+                <span class="catSpan">כלי עבודה</span>
+            </div>
+            <div id="clothsCategory" class="categoryDiv">
+                <img src="images/BasketCategory.png" width="150" height="150" />
+                <span class="catSpan">ביגוד</span>
+            </div>
+
+            <div id="vegetablesCategory" class="categoryDiv">
+                <img src="images/BasketCategory.png" width="150" height="150" />
+                <span class="catSpan">ירקות</span>
+            </div>
+            <div id="furnitureCategory" class="categoryDiv">
+                <img src="images/BasketCategory.png" width="150" height="150" />
+                <span class="catSpan">ריהוט</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

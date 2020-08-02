@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet"
+          href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="scripts/JavaScript.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div data-role="page" id="page1" class="openingScreens">
+        <div id="start" role="main" class="">
+            <h1>ברוכים הבאים למערכת</h1>
+            <img id="logo1" src="images/logo.png" />
+            <a id="systemEntrence" href="#page2" data-transition="pop" class="whiteBtns">כניסה</a>
+        </div>
+            <div class="dotstyle dotstyle-scaleup">
+                <ul>
+                    <li class="current"><a href="#page1">entrence</a></li>
+                    <li><a href="#page2">About1</a></li>
+                    <li><a href="#page3">About2</a></li>
+                </ul>
+            </div>
+      
+
+    </div>
+
+    <div data-role="page" id="page2" class="openingScreens">
+        <div class="appHeader" >
+            <img class="headerLogo" src="images/logo.png" />
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>במערכת זו תעברו אבחון שיסייע לבחון את מצבכם הקוגניטיבי הנוכחי. האבחון מורכב ממספר שלבים המודדים יכולות תפקודיות שונות. </p>
+            <img class ="character"src="images/character.png" />
+        </div>
+            <div class="dotstyle dotstyle-scaleup" >
+                <ul>
+                    <li><a href="#page1">entrence</a></li>
+                    <li class="current"><a href="#page2">About1</a></li>
+                    <li><a href="#page3">About2</a></li>
+                </ul>
+            </div>
+        
+    </div>
+
+    <div data-role="page" id="page3" class="openingScreens">
+        <div class="appHeader">
+            <img class="headerLogo" src="images/logo.png" />
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>לאחר סיום האבחון התוצאות יועברו למטפל כדי לסייע לו לבנות את המשך הטיפול המותאם עבורך. חשוב לזכור כי מטרת האבחון אינה למנוע הידרדרות קוגניטיבית נוספת</p>
+            <a id="startQuestionnaire" href="PersonalQuestionnaire.html" data-transition="pop" class="whiteBtns">התחלה</a>
+            <img class="character" src="images/character.png" />
+        </div>
+
+        <div class="dotstyle dotstyle-scaleup">
+            <ul>
+                <li><a href="#page1">entrence</a></li>
+                <li><a href="#page2">About1</a></li>
+                <li class="current"><a href="#page3">About2</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,860 @@
+﻿body {
+    font-family: Assistant;
+    direction: rtl;
+    height:100%;
+   }
+
+h1 {
+    text-align: center;
+    font-family: Assistant;
+    color: #009688;
+}
+/*מסכי פתיחה*/
+.openingScreens, #memoryChapterPage1 {
+    background-color: white;
+}
+
+    .openingScreens p {
+        text-align: right;
+        margin-right: 10%;
+        width:50%;
+        color: #454545;
+        font-weight: 300;
+        font-size: 26px;
+        margin-top: 20%;
+    }
+    /*header*/
+.appHeader {
+
+}
+
+.headerLogo {
+    padding:10px;
+    padding-top:15px;
+    width: 45%;
+    height: 45%;
+    display: block;
+    margin: 0 auto;
+}
+
+#start {
+    margin-top:40%;
+    /*height:30%;*/
+    /*margin-bottom: 30%*/
+}
+
+#start h1 {
+    color: black;
+    display: block;
+    font-size: 40px;
+    text-align:center;
+    font-weight:300;
+}
+
+#logo1 {
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin: 0 auto;
+    padding:30px 30px;
+}
+.whiteBtns {
+    /*top: 667px;
+    left: 278px;*/
+
+    background: #FFC107 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    width: 25%;
+    height: 20px;
+    padding: 10px;
+    padding-bottom: 22px;
+    font-family: Assistant;
+    text-decoration: none;
+    text-align: center;
+}
+
+#systemEntrence {
+    top:19px;
+    position:relative;
+    display: block;
+    font-size: 25px;
+    margin: 0 auto ;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: SemiBold 25px/33px Assistant;
+    letter-spacing: 0px;
+    color: #343535;
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper
+{
+    text-shadow: none;
+}
+#startQuestionnaire {
+    top: 19px;
+    position: relative;
+    display: block;
+    font-size: 25px;
+    margin: 20%;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: SemiBold 25px/33px Assistant;
+    letter-spacing: 0px;
+    color: #343535;
+ 
+}
+.character {
+    width: 40%;
+    left:10%;
+    position: fixed;
+    bottom: 17%;
+}
+
+.dotstyle ul {
+    display: block;
+    width: 20%;
+    margin-right: 35%;
+    position: fixed;
+    bottom: 25px;
+    list-style: none;
+    cursor: default;
+}
+    .dotstyle li {
+    position: relative;
+    display: block;
+    float: right;
+    margin: 0 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+    .dotstyle li a {
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        outline: none;
+        border-radius: 50%;
+        background-color: #fff;
+        background-color: rgba(255,255,255,0.3);
+        text-indent: -999em;
+        cursor: pointer; /* make the text accessible to screen readers */
+        position: absolute;
+    }
+
+        .dotstyle li a:focus {
+            outline: none;
+        }
+
+.dotstyle-scaleup li a {
+    border: 1px solid #707070;
+    -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dotstyle-scaleup li.current a {
+    background: #009688 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/*שאלון פרטים אישיים*/
+.QuestionnaireScreens {
+    background-color: #F1F1F1;
+}
+
+
+/*.progress {
+    width: 700px;
+    margin: 90px auto;
+}*/
+
+.ui-page-theme-a .ui-btn.ui-btn-active {
+background-color: #00796B;
+border:none;
+text-shadow:none;
+}
+
+.QuestionnaireMain {
+    width: 87%;
+    height: 950px;
+    max-width:750px;
+    top: 33px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    border-radius: 13px;
+    text-align: center;
+}
+
+    .QuestionnaireMain p {
+        font-size: 26px;
+        font-weight: 600;
+        margin-top: 3px;
+    }
+    .QuestionnaireMain h2 {
+        font-size: 32px;
+        font-weight: 600;
+        color: #009688;
+    }
+    .questions {
+     text-align: right;
+     font-size: 20px;
+     width:70%;
+     margin:0 auto;
+     
+     }
+        .questions p{
+            padding:0px;
+        }
+        .Qinputs {
+            width: 60%;
+            text-align: right;
+            direction: rtl;
+        }
+
+.ui-mobile label, div.ui-controlgroup-label {
+    /*margin-right:-44px;*/
+    font-size: 20px;
+    margin-top:20px;
+}
+/*.back {
+    position: relative;
+    float: right;
+    width: 15%;
+    margin-top: 0px;
+    width: 47px;
+    height: 47px;
+}*/
+
+.Next {
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+    color: white;
+    font-size: 20pt;
+}
+
+
+.nextBtnHref {
+    margin-left: -13px;
+    float: left;
+}
+
+.backBtnHref {
+    float: right;
+    margin-top: 20px;
+}
+
+#NumPosNextbtn, #checkTimeNextbtn, #nextbtn4{
+    border: none;
+    margin-top: 0px;
+    background-image: url(images/doneClock.png);
+    width: 246px;
+    height: 50px;
+    float: left;
+    position: relative;
+    bottom: 160px;
+    left: 50px;
+    z-index: 3;
+}
+
+#checkCalcTimeBtn {
+    border: none;
+    margin-top: 68px;
+    background-image: url(images/doneClock.png);
+    width: 246px;
+    height: 50px;
+    float: left;
+    position: relative;
+    bottom: 160px;
+    left: 50px;
+    z-index: 3;
+}
+/*#nextImg, #nextImg1, #nextImg2, #nextImg3 {
+    width: 30px;
+    height: 30px;
+    background-image: url('images/nextIcon.png');
+    background-size: 34px;
+}*/
+.nextlable, .backlabel {
+    font-size: 26px;
+    font-weight: 600;
+}
+.nextlable {
+
+    float: left;
+    margin-left: 14px;
+    margin-top: 16px;
+ 
+}
+
+.backlabel {
+    float: right;
+    margin-top: 27px;
+    margin-right: 13px;
+}
+
+
+#agelabel {
+    float: right;
+    padding-left: 300px;
+    padding-bottom: 7px;
+}
+
+.radioGroup {
+    float:right;
+    
+}
+.ui-field-contain, .ui-mobile fieldset.ui-field-contain {
+    display: inline-grid;
+}
+.ui-controlgroup-horizontal .ui-controlgroup-controls {
+    width:562px;
+}
+
+.ui-controlgroup-controls .ui-btn-corner-all, .ui-controlgroup-controls .ui-btn.ui-corner-all {
+    font-family: Assistant;
+}
+#ageSelect {
+}
+
+.back {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+#backImg1, #backImg2 {
+    width: 22px;
+    height: 19px;
+    background-image: url('images/backIcon.png');
+    background-size: 22px;
+    margin: 0 auto;
+}
+
+.questions textarea {
+    height:auto !important;
+    max-height:150px;
+}
+
+/*מבחן השעון*/
+
+.backgroundForPages {
+    background-color: #EFEFEF;
+    border-radius: 28px 28px 0px 0px;
+    height: 950px;
+}
+/*גרירת מספרים*/
+
+#backgroundForNumbers {
+    border-radius: 10px;
+    background-color: #B2DFDB;
+    margin-top: 55px;
+    margin-right: 34px;
+    width: 69px;
+    height: 771px;
+    float: right;
+    z-index: -2;
+}
+
+/*#instructionsClockDiv {
+    width: 800px;
+    background-color: white;
+    margin-top: 30px;
+    z-index:1;
+}*/
+
+#instructionsClock {
+    display:inline-block;
+    width:563px;
+    background-color: white;
+    font-size: 28px;
+    font-family: Assistant;
+    position: relative;
+    text-align: right;
+    top: 30px;
+    padding: 10px 26px 10px 119px;
+    right: 30px;
+    border-radius: 10px;
+}
+.numbers {
+    width: 4.5%;
+    height: 50px;
+    background-color:white;
+    padding-right: 16px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-family: Assistant;
+    font-weight: 700;
+    font-size: 25pt;
+    position: fixed;
+    margin-top: 9px;
+    right: 0%;
+}
+
+.twoDigitNumbers {
+    
+    background-color: white;
+    width: 5%;
+    height: 50px;
+    padding-right: 9px;
+    padding-left: 3px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-family: Assistant;
+    font-weight: 700;
+    font-size: 25pt;
+    position: fixed;
+    margin-top: 9px;
+}
+
+.freeTextLabels {
+    height :80px;
+}
+
+#myFigure   {
+    width: 608px;
+    height: 771px;
+    background-color: white;
+    margin-top: 55px;
+    margin-right: 128px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+/*.numbers {
+    width: 20px;
+    margin-right:15px;
+    font-family: Rubik;
+    font-size: 28pt;
+    position: absolute;
+    right: 0%;
+   
+}*/
+
+/*Predefined clock*/
+
+
+
+#ClockTestPage1 {
+    background-color:white;
+}
+#ClockTestPage1 h1 {
+    font: Bold var(--unnamed-font-size-27)/var(--unnamed-line-spacing-36) var(--unnamed-font-family-assistant);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-009688);
+    text-align: center;
+    font: Bold 36px Assistant;
+    letter-spacing: 0px;
+    color: #009688;
+    opacity: 1;
+}
+
+
+.hour {
+    stroke: black;
+    stroke-width: 4;
+}
+
+
+.minute-hand {
+    stroke: black;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.hour-hand {
+    stroke: black;
+    stroke-width: 14;
+    stroke-linecap: round;
+}
+
+#mySvgCircle {
+    stroke-width: 2;
+
+}
+
+#svg {
+    position: absolute;
+    top: 22%;
+    right: 10%;
+}
+#quantitativeChapterSvg {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+#clocksvg  {
+    z-index: 2;
+    margin-right: 45px;
+    margin-top: 10px;
+}
+
+#clocksvg1 {
+    z-index: 2;
+    margin-right: -35px;
+    margin-top: 122px;
+}
+
+.numbersInClacPage {
+    font-family:Assistant;  
+    font-size:20pt;
+}
+.popupOpen {
+    display: none;
+}
+
+#container1, #quantitativeChapterClockContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    touch-action: none;
+}
+/*עמוד ניווט*/
+
+#ChaptersNavPage1, #ChaptersNavPage2, #ChaptersNavPage3, #quantitativeChapterPage1 {
+    background-color: white;
+}
+
+.navPageUL li{
+    list-style-type:none;
+}
+
+.ChaptersNavLi {
+
+    width: 35%;
+    height: 8%;
+    background-color: white;
+    border-radius:10px;
+    margin: 5%;
+}
+
+.navImages {
+    right: 15%;
+    top: 50px;
+    position: relative;
+    width: 70%;
+    margin-bottom: -32px;
+    border-radius: 17px;
+    display: inline-block;
+    background-color: #efefef;
+    padding: 13px;
+}
+
+.navImagesActive {
+    /*right: 15%;
+    top: 50px;
+    position: relative;
+    width: 70%;*/
+
+    border:solid 3px #FFC107 !important;
+    /*margin-bottom: -32px;*/
+    /*display: inline-block;
+    background-color: #efefef;
+    padding: 13px;*/
+}
+
+
+.navtext {
+    padding: 3px;
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 246px;
+    height: 50px;
+    display: inline-block;
+    font-size: 22pt;
+    bottom: 90px;
+    right: 336px;
+    background: #BDBDBD;
+    border-radius: 10px;
+}
+
+.navtextActive {
+    font-weight:500;
+    padding: 3px;
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 246px;
+    height: 50px;
+    display: inline-block;
+    font-size: 22pt;
+    bottom: 90px;
+    right: 336px;
+    background: #009688;
+    border-radius: 10px;
+}
+.VL {
+    border-left: 3px solid #FFC107;
+    height: 108px;
+    position: fixed;
+    width: 174px;
+    transform: translateY(-17px);
+}
+
+/*כישורים שפתיים*/
+
+.numbersInClacPage {
+    font-weight:700;
+}
+#languageSkillsChapterPage1, #languageSkillsChapterPage2, #languageSkillsChapterPage3, #languageSkillsChapterPage4, #languageSkillsChapterPage5 {
+    background-color: white;
+}
+
+#startlanguageSkillsChapter, #languageSkillsPearsBTN {
+    background: #FFC107;
+    font-size: 16pt;
+    font-family: Assistant;
+    text-shadow: none;
+    border-radius: 10px !important;
+    border: none;
+    opacity: 1 !important;
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    /*background-color: #FFC107 !important;*/
+    /*background: #FFC107 0% 0% no-repeat padding-box !important;
+    border-radius: 10px;
+    opacity: 1;
+    width: 25%;
+    height: 20px;
+    padding: 10px;
+    font-size:18pt;
+    padding-bottom: 22px;
+    font-family: Assistant;
+    text-decoration: none;
+    text-align: center;*/
+}
+.languageSkillsChapterScreens {
+    font-family: Assistant;
+    background-color:white;
+
+}
+
+.wordsByLetters {
+    font-size: 26pt;
+    font-weight:700;
+    position:fixed;
+    right:42%;
+    left:42%;
+    top:50%;
+    text-align:center;
+
+}
+
+.TestInstructionsLabel{
+    font-size:22pt;
+    background-color:white;
+    margin-right:22px;
+    font-family:Assistant;
+}
+
+    .TestInstructionsLabel label {
+        font-size: 22pt;
+    }
+
+#languageSkillsInstruction {
+    font-size: 22pt;
+    background-color: white;
+    position: relative;
+    top: 20px;
+    text-align: right;
+}
+
+#letterRndStartBTN {
+    background: #FFC107;
+    font-size:18pt;
+    border-radius: 10px !important;
+    border:none;
+    opacity: 1 !important;
+    width: 25%;
+    height: 50px;
+    font-family: Assistant;
+    margin: 300px 161px;
+}
+.pears {
+    width: 15%;
+    font-size: 18pt;
+    height: 5%;
+    line-height: 51px;
+    background-color: #91C9C2;
+    text-shadow: none;
+    border-radius: 10px;
+    color: #454545;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wordsByCategory {
+    width: 4.5%;
+    height: 50px;
+    padding-right: 16px;
+    font-family: Assistant;
+    font-size: 25pt;
+    position: relative;
+    right: 50%;
+    text-align:center;
+    top:10%;
+    font-weight:600;
+    z-index:1;
+}
+.categoriesForWords {
+    margin-left:50px;   
+}
+.categoryDiv {
+    width: 120px;
+    height: 120px;
+    font-size: 20pt;
+    text-shadow: none;
+    display: inline;
+    z-index: 2;
+    position: absolute;
+    top: 80%;
+}
+
+#Categorycontainer{ 
+    position:relative;
+    right:0px;
+}
+
+.catSpan {
+    text-align: center;
+    font-weight: 700;
+    right: 39px;
+    width: 74px;
+    top: 64px;
+    font-size: 18pt;
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+}
+.categoryDiv:hover{
+    border:2px solid;
+}
+#workToolsCategory {
+    margin-right: 5%;
+}
+
+#clothsCategory {
+    margin-right: 28%;
+}
+
+#vegetablesCategory {
+    margin-right: 51%;
+}
+#furnitureCategory {
+    margin-right: 74%;
+}
+
+/*זכרון לטווח קצר*/
+
+#backgroundForPageMemory {
+    background-color:#efefef;   
+}
+
+#memoryChapterInstructions {
+    display: inline-block;
+    width: 551px;
+
+    background-color: white;
+    font-size: 28px;
+    font-family: Assistant;
+    position: relative;
+    text-align: right;
+    top: 35px;
+    padding: 10px 26px 10px 119px;
+    right: 37px;
+    border-radius: 15px;
+}
+.pathMemory {
+    font-size: 30px;
+    background-color: #009688;
+    color: white;
+    height: 7%;
+    width: 10%;
+    border-radius: 10px;
+    text-shadow: none;
+    text-align: center;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+#MemoryLinesCan {
+    width: 700px;
+    height: 800px;
+    position: fixed;
+    top: 50px;
+    right: 30px;
+}
+
+
+#pathMemoryDiv {
+    background-color: white;
+    width: 700px;
+    height: 756px;
+    position: fixed;
+    top: 208px;
+    right: 30px;
+    border-radius: 15px;
+}
+/*כישורים כמותיים*/
+#myFigureCalcChapter {
+    width: 691px;
+    height: 771px;
+    background-color: white;
+    margin-top: 55px;
+    /* margin-right: 128px; */
+    border-radius: 15px;
+    z-index: 3;
+}
+
+#quantitativeChapterInstructions {
+    display: inline-block;
+    width: 551px;
+    height: 69px;
+    background-color: white;
+    font-size: 28px;
+    font-family: Assistant;
+    position: relative;
+    text-align: right;
+    top: 30px;
+    padding: 10px 26px 10px 119px;
+    right: 37px;
+    border-radius: 15px;
+}
+
+/*Media Queries*/
+/* Phone and Tablet (phones, 768px and down) */
+@media only screen and (max-width: 769px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .progressImage {
+        width: 87%;
+        margin: 20px 63px auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 770px and up) */
+@media only screen and (min-width: 770px) {
+
+    /*questionnaire page*/
+
+    .Next {
+        width: 55px;
+        height: 55px;
+        margin-bottom: -13px;
+        margin-left: 32px;
+    }
+
+    .progressImage {
+        width: 60%;
+        margin-right: 20%;
+    }
+}

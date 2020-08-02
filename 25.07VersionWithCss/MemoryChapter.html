@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!-- CSS -->
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Scripts -->
+    <script src="scripts/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="scripts/JavaScript.js"></script>
+
+</head>
+<body >
+    <div data-role="page" id="memoryChapterPage1" class="languageSkillsChapterScreens">
+
+        <h1>זיכרון לטווח קצר</h1>
+        <div class="backgroundForPages">
+
+                <span id="memoryChapterInstructions">
+                    חברו בין  <span id="MemorySpan1" style="font-weight:700">1</span> לבין  <span id="MemorySpan2" style="font-weight:700">א</span> בעזרת לחיצה על שני האובייקטים 
+
+            <div class="center" id="pathMemoryDiv">
+                <svg id="MemoryLinesCan"></svg>
+                <span id="aWord" class="pathMemory" style=" right:70px; top:230px; position:fixed" onclick="pathMemoryFunc(this)">א</span>
+                <span id="1Word" class="pathMemory" style=" right:370px; top:560px; position:fixed" onclick="pathMemoryFunc(this)">1</span>
+                <span id="bWord" class="pathMemory" style=" right:520px; top:700px; position:fixed" onclick="pathMemoryFunc(this)">ב</span>
+                <span id="2Word" class="pathMemory" style=" right:310px; top:340px; position:fixed" onclick="pathMemoryFunc(this)">2</span>
+                <span id="cWord" class="pathMemory" style=" right:60px; top:670px; position:fixed" onclick="pathMemoryFunc(this)">ג</span>
+                <span id="3Word" class="pathMemory" style=" right:200px; top:760px; position:fixed" onclick="pathMemoryFunc(this)">3</span>
+                <span id="dWord" class="pathMemory" style=" right:540px; top:240px; position:fixed" onclick="pathMemoryFunc(this)">ד</span>
+                <span id="4Word" class="pathMemory" style=" right:380px; top:808px; position:fixed" onclick="pathMemoryFunc(this)">4</span>
+                <span id="eWord" class="pathMemory" style=" right:160px; top:480px; position:fixed" onclick="pathMemoryFunc(this)">ה</span>
+                <span id="5Word" class="pathMemory" style=" right:600px; top:510px; position:fixed" onclick="pathMemoryFunc(this)">5</span>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

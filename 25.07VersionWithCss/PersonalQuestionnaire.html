@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+    <script src="scripts/JavaScript.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+
+</head>
+<body>
+    <div data-role="page" id="QuestionnairePage1" class="QuestionnaireScreens" >
+        <!--<div id="progress1" class="progress">-->
+            <img src="images/Progress1.png" class="progressImage" />
+        <!--</div>-->
+
+            <div id="basicQ" role="main" class="ui-content QuestionnaireMain">
+                <h2>פרטים בסיסיים</h2>
+                <span>תחילה אנחנו רוצים להכיר אותך</span>
+                <div class="questions">
+                    <label>שם מלא</label>
+                    <input type="text" name="text-basic" id="text-Fullname" value="" class="Qinputs">
+                    <label>ת.ז.</label>
+                    <input type="number" name="text-basic" id="text-id" value="" class="Qinputs">
+                    <div class="ui-field-contain">
+
+                        <label id="agelabel">גיל</label>
+                        <select name="select-native-fc" id="ageSelect">
+
+                            <option value="choose">בחרו</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="43">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                            <option value="56">56</option>
+                            <option value="57">57</option>
+                            <option value="58">58</option>
+                            <option value="59">59</option>
+                            <option value="60">60</option>
+                            <option value="61">61</option>
+                            <option value="62">62</option>
+                            <option value="63">63</option>
+                            <option value="64">64</option>
+                            <option value="65">65</option>
+                            <option value="66">66</option>
+                            <option value="67">67</option>
+                            <option value="68">68</option>
+                            <option value="69">69</option>
+                            <option value="70">70</option>
+                            <option value="71">71</option>
+                            <option value="72">72</option>
+                            <option value="73">73</option>
+                            <option value="74">74</option>
+                            <option value="75">75</option>
+                            <option value="76">76</option>
+                            <option value="77">77</option>
+                            <option value="78">78</option>
+                            <option value="79">79</option>
+                            <option value="80">80</option>
+                            <option value="81">81</option>
+                            <option value="82">82</option>
+                            <option value="83">83</option>
+                            <option value="84">84</option>
+                            <option value="85">85</option>
+                            <option value="86">86</option>
+                            <option value="87">87</option>
+                            <option value="88">88</option>
+                            <option value="89">89</option>
+                            <option value="90">90</option>
+                            <option value="91">91</option>
+                            <option value="92">92</option>
+                            <option value="93">93</option>
+                            <option value="94">94</option>
+                            <option value="95">95</option>
+                            <option value="96">96</option>
+                            <option value="97">97</option>
+                            <option value="98">98</option>
+                            <option value="99">99</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                    <label>שנת לידה</label>
+                    <input type="number" name="text-basic" maxlength="4" id="text-BirthYear" value="" class="Qinputs">
+                    <label>ארץ לידה</label>
+                    <input type="text" name="text-basic" id="text-BirthCuntry" value="" class="Qinputs">
+                    <label>שנת עלייה</label>
+                    <input type="number" name="text-basic" maxlength="4" id="text-AliyaYear" value="" class="Qinputs">
+                </div>
+
+
+                <a href="#QuestionnairePage2" class="nextBtnHref"><img src="images/next btn.png" id="nextbtn1" class="Next" /></a>
+                <span class="nextlable">הבא</span>
+            </div>
+
+    </div>
+
+    <div data-role="page" id="QuestionnairePage2" class="QuestionnaireScreens">
+
+        <!--<div id="progress2" class="progress">-->
+            <img src="images/Progress2.png" class="progressImage"/>
+        <!--</div>-->
+            <div id="advencedQ" role="main" class="ui-content QuestionnaireMain">
+                <h2>בואו נכיר לעומק</h2>
+
+                <div class="questions">
+                    <label>השכלה</label>
+                    <div style="width: 532px; margin: 0 auto; float:left">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse">
+
+                            <input type="radio" name="radio-choice-h-1" id="educationOpstion5" value="DontReamember">
+                            <label for="educationOpstion5">לא זוכר/ת</label>
+                            <input type="radio" name="radio-choice-h-1" id="educationOpstion4" value="degree">
+                            <label for="educationOpstion4">אקדמית</label>
+                            <input type="radio" name="radio-choice-h-1" id="educationOpstion3" value="diploma">
+                            <label for="educationOpstion3">תעודה</label>
+                            <input type="radio" name="radio-choice-h-1" id="educationOpstion2" value="HighSchool">
+                            <label for="educationOpstion2">תיכונית</label>
+                            <input type="radio" name="radio-choice-h-1" id="educationOpstion1" value="preHighSchool" checked="checked">
+                            <label for="educationOpstion1">טרום תיכונית</label>
+
+                        </fieldset>
+                    </div>
+                    <label>תעסוקה</label>
+                    <div style="width: 658px; margin: 0 auto; float:left">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse">
+                            <input type="radio" name="radio-choice-h-2" id="workOpstion5" value="DontReamember">
+                            <label for="workOpstion5">לא זוכר/ת</label>
+                            <input type="radio" name="radio-choice-h-2" id="workOpstion3" value="retirement">
+                            <label for="workOpstion3">גמלאות</label>
+                            <input type="radio" name="radio-choice-h-2" id="workOpstion2" value="unemployed">
+                            <label for="workOpstion2">מובטל/ת</label>
+                            <input type="radio" name="radio-choice-h-2" id="workOpstion1" value="working" checked="checked">
+                            <label for="workOpstion1">עובד/ת</label>
+                        </fieldset>
+                    </div>
+                    <label>מצב משפחתי</label>
+                    <div style="width: 578px; margin: 0 auto; float:left">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse ">
+                            <input type="radio" name="radio-choice-h-3" id="familyOpstion5" value="DontReamember">
+                            <label for="familyOpstion5">לא זוכר/ת</label>
+                            <input type="radio" name="radio-choice-h-3" id="familyOpstion4" value="widower">
+                            <label for="familyOpstion4">אלמנ/ה</label>
+                            <input type="radio" name="radio-choice-h-3" id="familyOpstion3" value="divorcee">
+                            <label for="familyOpstion3">גרוש/ה</label>
+                            <input type="radio" name="radio-choice-h-3" id="familyOpstion2" value="married">
+                            <label for="familyOpstion2">נשוי/אה</label>
+                            <input type="radio" name="radio-choice-h-3" id="familyOpstion1" value="singel" checked="checked">
+                            <label for="familyOpstion1">רווק/ה</label>
+                        </fieldset>
+                    </div>
+
+                    <label id="Kidslabel">מספר ילדים</label>
+                    <div style="left:!important 200px;">
+                        <select name="select-native-fc" id="kidsNum">
+
+                            <option value="choose">בחרו</option>
+                            <option value="noKids">אין ילדים</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="10Plus">10+</option>
+                            <option value="DontReamember">לא זוכר/ת</option>
+                        </select>
+                    </div>
+                    <label>מקום מגורים</label>
+                    <div style="float:left; width:715px;">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse">
+                            <input type="radio" name="radio-choice-h-4" id="housingOpstion4" value="DontReamember">
+                            <label class="housingOpstions" for="housingOpstion4">לא זוכר/ת</label>
+                            <input type="radio" name="radio-choice-h-4" id="housingOpstion3" value="NursingHome">
+                            <label class="housingOpstions" for="housingOpstion3">דיור מוגן</label>
+                            <input type="radio" name="radio-choice-h-4" id="housingOpstion2" value="house">
+                            <label class="housingOpstions" for="housingOpstion2">בית</label>
+                            <input type="radio" name="radio-choice-h-4" id="housingOpstion1" value="Apartment" checked="checked">
+                            <label class="housingOpstions" for="housingOpstion1">דירה</label>
+                        </fieldset>
+                    </div>
+
+                    <label>מגורים עם</label>
+                    <div style="float:left; width:701px;">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse">
+                            <input type="radio" name="radio-choice-h-5" id="LivesWithOpstion4" value="DontReamember">
+                            <label for="LivesWithOpstion4">לא זוכר/ת</label>
+                            <input type="radio" name="radio-choice-h-5" id="LivesWithOpstion3" value="children">
+                            <label for="LivesWithOpstion3">ילדים</label>
+                            <input type="radio" name="radio-choice-h-5" id="LivesWithOpstion2" value="spouse">
+                            <label for="LivesWithOpstion2">בן/בת זוג</label>
+                            <input type="radio" name="radio-choice-h-5" id="LivesWithOpstion1" value="alone" checked="checked">
+                            <label for="LivesWithOpstion1">לבד</label>
+                        </fieldset>
+                    </div>
+                    <label>האם יש בעל חיים?</label>
+                    <div style="float:left; width:850px;">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse">
+                            <input type="radio" name="radio-choice-h-6" id="PetOpstion3" value="DontReamember">
+                            <label for="PetOpstion3">לא זוכר/ת</label>
+                            <input type="radio" name="radio-choice-h-6" id="PetOpstion2" value="no">
+                            <label for="PetOpstion2">לא</label>
+                            <input type="radio" name="radio-choice-h-6" id="PetOpstion1" value="yes" checked="checked">
+                            <label for="PetOpstion1">כן</label>
+                        </fieldset>
+                    </div>
+
+                </div>
+
+
+                <a href="#QuestionnairePage1" class="backBtnHref"><img src="images/back btn.png" id="backBtn2" class="back" /></a>
+                <span class="backlabel">הקודם</span>
+
+
+                <a href="#QuestionnairePage3" class="nextBtnHref"><img src="images/next btn.png" id="nextbtn2" class="Next" /></a>
+                <span class="nextlable">הבא</span>
+            </div>
+</div>
+    <div data-role="page" id="QuestionnairePage3" class="QuestionnaireScreens">
+
+        <!--<div id="progress3" class="progress">-->
+
+            <img src="images/Progress3.png" class="progressImage"/>
+        <!--</div>-->
+
+            <div id="conductQ" role="main" class="ui-content QuestionnaireMain">
+                <h2>איך אני מתנהל/ת</h2>
+
+                <div class="questions">
+                    <label>אני עצמאי/ת</label>
+                    <div style="float:left; width:967px;">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse">
+                            <input type="radio" name="radio-choice-h-7" id="IndependentOpstion2" value="no">
+                            <label for="IndependentOpstion2">לא</label>
+                            <input type="radio" name="radio-choice-h-7" id="IndependentOpstion1" value="yes" checked="checked">
+                            <label for="IndependentOpstion1">כן</label>
+                        </fieldset>
+                    </div>
+
+                    <label>אני נוהג/ת</label>
+                    <div style="float:left; width:846px;">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse">
+                            <input type="radio" name="radio-choice-h-8" id="DrivingOpstion3" value="noLicence">
+                            <label for="DrivingOpstion3">אין לי רישיון</label>
+                            <input type="radio" name="radio-choice-h-8" id="DrivingOpstion2" value="no">
+                            <label for="DrivingOpstion2">לא</label>
+                            <input type="radio" name="radio-choice-h-8" id="DrivingOpstion1" value="yes" checked="checked">
+                            <label for="DrivingOpstion1">כן</label>
+                        </fieldset>
+                    </div>
+                    <label>נטילת תרופות</label>
+                    <div style="float:left; width:847px;">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse">
+                            <input type="radio" name="radio-choice-h-9" id="MedicationOpstion2" value="notIndependent">
+                            <label for="MedicationOpstion2">זקוק/ה לעזרה</label>
+                            <input type="radio" name="radio-choice-h-9" id="MedicationOpstion1" value="Independent" checked="checked">
+                            <label for="MedicationOpstion1">עצמאי/ת</label>
+                        </fieldset>
+                    </div>
+
+                    <label>התנהלות כלכלית</label>
+                    <div style="float:left; width:850px;">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse">
+                            <input type="radio" name="radio-choice-h-10" id="financialOpstion2" value="notIndependent">
+                            <label for="financialOpstion2">זקוק/ה לעזרה</label>
+                            <input type="radio" name="radio-choice-h-10" id="financialOpstion1" value="Independent" checked="checked">
+                            <label for="financialOpstion1">עצמאי/ת</label>
+                        </fieldset>
+                    </div>
+                    <label>סידורים וטיפול בבית</label>
+                    <div style="float:left; width:850px;">
+                        <fieldset data-role="controlgroup" data-type="horizontal" class="radioGroup flex-row-reverse">
+                            <input type="radio" name="radio-choice-h-11" id="HouseMaintenanceOpstion2" value="notIndependent">
+                            <label for="HouseMaintenanceOpstion2">זקוק/ה לעזרה</label>
+                            <input type="radio" name="radio-choice-h-11" id="HouseMaintenanceOpstion1" value="Independent" checked="checked">
+                            <label for="HouseMaintenanceOpstion1">עצמאי/ת</label>
+                        </fieldset>
+                    </div>
+
+                    <label id="activitylabel">רמת הפעילות מחוץ לבית (1- נמוכה, 10- גבוהה)</label>
+                    <select name="select-native-fc" id="activityNum">
+                        <option value="choose">בחרו</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                    <label for="activityTextarea">בדרך כלל אני עושה...</label>
+                    <textarea cols="40" rows="8" name="textarea" id="activityTextarea"></textarea>
+                </div>
+
+
+                <a href="#QuestionnairePage2" class="backBtnHref"><img src="images/back btn.png" id="backBtn3" /></a>
+                <span class="backlabel">הקודם</span>
+
+
+                <a href="#QuestionnairePage4" class="nextBtnHref "><img src="images/next btn.png" id="nextbtn3" class="Next" /></a>
+                <span class="nextlable">הבא</span>
+            </div>
+        </div>
+        <div data-role="page" id="QuestionnairePage4" class="QuestionnaireScreens">
+
+            <!--<div id="progress4" class="progress">-->
+                <img src="images/Progress4.png" class="progressImage"/>
+            <!--</div>-->
+
+            <div id="medicalQ" role="main" class="ui-content QuestionnaireMain">
+                <h2>שאלון רפואי</h2>
+
+                <div class="questions">
+
+
+                    <label for="MedicalTextarea" >אבחנות רפואיות</label>
+                    <textarea cols="40" rows="8" name="textarea" id="MedicalTextarea"></textarea>
+
+                    <label for="MedicinesTextarea" >תרופות</label>
+                    <textarea cols="40" rows="8" name="textarea" id="MedicinesTextarea"></textarea>
+
+                    <label for="MedicalComplaintsTextarea" >תלונות של הנבדק על מצבו הקוגניטיבי</label>
+                <textarea cols="40" rows="8" name="textarea" id="MedicalComplaintsTextarea"></textarea>
+                </div>
+               
+
+                <a href="#QuestionnairePage2" class="backBtnHref"><img src="images/back btn.png" id="backBtn4" class="back"/></a>
+                <span class="backlabel">הקודם</span>
+
+                <button id="nextbtn4" class="Next" >
+                    <a href="clockTest.html" class="nextBtnHref"></a>
+                </button>
+
+
+
+            </div>
+
+        </div>
+</body>
+</html>

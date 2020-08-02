@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!-- CSS -->
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet"
+          href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Scripts -->
+    <script src="scripts/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="ClockTestPage1" class="ClockScreens">
+
+        <h1>מבחן השעון</h1>
+        <div class="backgroundForPages">
+            <!--הנחיות המשימה-->
+          
+                <span id="instructionsClock"></span>
+     
+
+            <!--תגית המכילה את השעון המובנה מראש והמספרים-->
+            <div id="backgroundForNumbers"></div>
+            <figure class="center" id="myFigure">
+
+                <div id="svg" class="center">
+                    <div id="outerContainer">
+                        <div id="container1">
+
+
+                        </div>
+                    </div>
+                </div>
+            </figure>
+
+            <!--כפתור סיום-->
+
+        </div>
+
+        <!--<div data-role="page" id="ClockTestPage2" class="ClockScreens">
+
+        <h1>מבחן השעון</h1>
+
+        <div id="clockMedicalExplaintion">
+            <h2>התרשמויות גורם מטפל</h2>
+            <p>הגענו לסיום מבחן השעון, הזינו כעת את כלל ההתרשמויות שלכם מביצועי המטופל</p>
+        </div>
+
+        <div class="questions">
+
+
+            <h3 id="SpeedInstractions">מהירות הבנת המשימה</h3>
+            <label for="SpeedNum">(1=נמוך, 10= גבוהה)</label>
+            <select name="select-native-fc" id="SpeedNum">
+                <option value="choose">בחרו</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label for="SpeedTextarea" id="SpeedTextInstractions">הסבר מילולי</label>
+            <textarea cols="40" rows="8" name="textarea" id="SpeedTextarea"></textarea>
+
+            <h3 id="MistakeInstractions">הבחנה של המטופל בטעויות</h3>
+            <label for="MistakeNum">(1=נמוך, 10= גבוהה)</label>
+            <select name="select-native-fc" id="MistakeNum">
+                <option value="choose">בחרו</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label for="MistakeTextarea" id="MistakeTextInstractions">הסבר מילולי</label>
+            <textarea cols="40" rows="8" name="textarea" id="MistakeTextarea"></textarea>
+
+            <h3 id="MistakeRepairInstractions">תיקון עצמי של טעויות</h3>
+            <label for="MistakeRepairNum">(1=נמוך, 10= גבוהה)</label>
+            <select name="select-native-fc" id="MistakeRepairNum">
+                <option value="choose">בחרו</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label for="MistakeRepairTextarea" id="MistakeRepairTextInstractions">הסבר מילולי</label>
+            <textarea cols="40" rows="8" name="textarea" id="MistakeRepairTextarea"></textarea>
+        </div>
+
+        <label class="nextlable">הבא</label>
+        <button id="nextbtn4" class="Next" value="">
+            <a href="chaptersNav.html">
+                <div id="nextImg3"></div>
+            </a>
+        </button>
+    </div>-->
+    </div>
+    <script src="scripts/JavaScript.js"></script>
+</body>
+</html>

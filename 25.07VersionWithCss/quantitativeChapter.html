@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!-- CSS -->
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet"
+          href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Scripts -->
+    <script src="scripts/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="scripts/JavaScript.js"></script>
+
+</head>
+<body >
+    <div data-role="page" id="quantitativeChapterPage1" class="quantitativeChapterScreens">
+
+        <h1>פרק כמותי</h1>
+        <div class="backgroundForPages">
+            <!--הנחיות המשימה-->
+            <!--<div class="TestInstructionsLabel">-->
+                <span id="quantitativeChapterInstructions"></span>
+            <!--</div>-->
+            <!--תגית המכילה את השעון המובנה מראש והמספרים-->
+
+            <figure class="center" id="myFigureCalcChapter">
+
+                <div id="quantitativeChapterSvg" class="center">
+                    <div id="outerContainer_quantitative">
+                        <div id="quantitativeChapterClockContainer">
+
+                        </div>
+                    </div>
+                </div>
+            </figure>
+
+            <!--כפתור סיום-->
+            <button onclick="checkCalcTime()" id="checkCalcTimeBtn"></button>
+
+        </div>
+       </div>
+        <!--<script src="scripts/JavaScript.js"></script>-->
+</body>
+</html>
